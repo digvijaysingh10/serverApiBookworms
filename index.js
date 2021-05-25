@@ -1,7 +1,7 @@
 const express = require('express');
 const api_config = require('./config');
 const app = express();
-const port = api_config.port;
+const port = process.env.PORT || api_config.port;
 const userRouter = require('./routers/userManager');
 const utilRouter = require('./routers/util');
 const novelRouter = require('./routers/novelManager');
