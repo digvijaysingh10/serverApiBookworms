@@ -1,13 +1,10 @@
 const { Mongoose } = require('mongoose');
 const mongoose = require('../connection');
 const schema = mongoose.Schema({
-    user : { type : mongoose.Types.ObjectId, ref: 'Users'},
-    novel : { type : mongoose.Types.ObjectId, ref: 'Novels'},
-    title : String,
-    data : Object,
-    created : Date,
-
-
+    user: { type: mongoose.Types.ObjectId, ref: 'Users' },
+    title: String,
+    content: Object,
+    created: Date,
 
 })
 
