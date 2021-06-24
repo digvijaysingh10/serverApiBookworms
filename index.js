@@ -15,7 +15,7 @@ const http = require('http');
 const server = http.createServer(app);
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:4200",
+        origin: "https://bookworm-s.herokuapp.com/",
         methods: ["GET", "POST"]
     }
 });
