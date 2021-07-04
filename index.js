@@ -53,7 +53,7 @@ app.use('/order', orderRouter);
 
 app.use(express.static('./uploads'))
 
-server.listen(port, () => {
+server.listen(process.env.PORT || port, () => {
     console.log('Hurray!!!!! server started on port ' + port);
 });
 
